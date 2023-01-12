@@ -1,0 +1,77 @@
+
+  
+/* what we need to do is to create a new class and switch the colors. Primary color will be #fff9f9 and secondary color will be #161616 */
+.light-theme {
+    --primary-clr: #fff9f9;
+    --primary-rgba-7: rgba(255, 255, 255, 0.4);
+    --secondary-clr: #161616;
+    --secondary-rgba-3: rgba(0, 0, 0, 0.3);
+  }
+  
+  .light-dark-mode {
+    width: 40px;
+    aspect-ratio: 1;
+    box-shadow: 0 0 0.3rem var(--secondary-rgba-3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-clr);
+    background-color: crimson;
+    font-size: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 200ms ease-in-out background-color, 200ms ease-in-out color;
+  }
+  
+  .light-dark-mode:active {
+    transform: scale(0.8);
+  }
+  
+  .light-dark-mode:hover {
+    background-color: green;
+    color: gold;
+  }
+  
+  .card {
+    width: clamp(300px, 92vw, 400px);
+    box-shadow: 0 0 0.5rem var(--secondary-rgba-3);
+    margin: 30px auto;
+    overflow: hidden;
+    border: none;
+    width: 540px;
+    opacity: 1;
+    margin-top: 80px;
+
+  }
+  
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+  }
+  
+
+  
+
+  
+ 
+  .search-icon:active {
+    transform: scale(0.8) translateY(-50%);
+  }
+  
+  .search-container:hover input,
+  .search-container input:focus {
+    width: 100%;
+    padding: 0 4rem 0 1rem;
+  }
+  
+  .random-btn {
+    position: absolute;
+    left: 1000px;
+    top: 215px;
+  }
+  
+  .random-btn i {
+    color: #fff9f9;
+}
